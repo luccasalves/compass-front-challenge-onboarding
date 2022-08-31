@@ -1,0 +1,12 @@
+:root {
+    --lightGreen: #92e3a9;
+    --iceBlue: #a1c3fc;
+    --dark: #282a36;
+    --light: #f9f9f9;
+
+    /* sematic variables */
+    --primary: var(--lightGreen);
+    --shadow: var(--iceBlue);
+    --darkText: var(--dark);
+    --lightText: var(--light);
+}
