@@ -11,44 +11,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./src/styles/css/main.min.css">
+    <link rel="stylesheet" href="./src/styles/css/slide-animation.min.css">
 </head>
 
 <body>
-    <section class="card__container">
-        <div class="card ">
-            <section class="card__content__view">
-                <div class="card__content__item">
-                    <img src="./src/assets/svg/1.svg" alt="imagem ilustativa">
-                    <h1 class="card__title">Plant lover Community</h1>
-                    <p class="card__text">Find gardening enthusiasts from all over the world</p>
-                </div>
-                <div class="card__content__item">
-                    <img src="./src/assets/svg/2.svg" alt="imagem ilustativa">
-                    <h1 class="card__title">Plant lover Community</h1>
-                    <p class="card__text">Find gardening enthusiasts from all over the world</p>
-                </div>
-                <div class="card__content__item">
-                    <img src="./src/assets/svg/3.svg" alt="imagem ilustativa">
-                    <h1 class="card__title">Plant lover Community</h1>
-                    <p class="card__text">Find gardening enthusiasts from all over the world</p>
-                </div>
-            </section>
-            <nav class="navigation_page_controll">
-                <input type="radio" name="card_page_controll" id="one" checked>
-                <input type="radio" name="card_page_controll" id="two">
-                <input type="radio" name="card_page_controll" id="three">
-            </nav>
-            <button class="continue__button shadow">
+    <div class="card">
+
+
+        <input class="hidden" title="slide 1" type="radio" name="slide" id="slide1" checked>
+        <input class="hidden" title="slide 2" type="radio" name="slide" id="slide2">
+        <input class="hidden" title="slide 3" type="radio" name="slide" id="slide3">
+
+        <section class="card__slide">
+            <div class="slide__item s1">
+                <img class="slide__ilustration" src="./src/assets/svg/1.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Plant lover Community</h1>
+                <p class="slide__text">Find gardening enthusiasts from all over the world</p>
+            </div>
+
+            <div class="slide__item s2">
+                <img class="slide__ilustration" src="./src/assets/svg/2.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Get fast & safe delivery</h1>
+                <p class="slide__text">Get good quality products for your plants</p>
+            </div>
+
+            <div class="slide__item s3">
+                <img class="slide__ilustration" src="./src/assets/svg/3.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Buy & Sell Tools</h1>
+                <p class="slide__text">Buy & sell good quality products for your beautiful plants</p>
+            </div>
+        </section>
+
+        <nav class="nav-slide-controll">
+            <label for="slide1" class="nav__item-control" id="c1"></label>
+            <label for="slide2" class="nav__item-control" id="c2"></label>
+            <label for="slide3" class="nav__item-control" id="c3"></label>
+        </nav>
+
+
+
+        <section class="action-button-group">
+            <button type="button" class="action-button__continue shadow" id="continue-btn">
                 Continue
             </button>
-            <button class="skip__button">
+            <button type="button" class="action-button__skip" id="skip-btn">
                 Skip
             </button>
-        </div>
+            <button type="button" class="action-button__initial" id="init-btn">
+                back to init
+            </button>
+        </section>
 
-
-
-    </section>
+    </div>
 </body>
 
 </html>

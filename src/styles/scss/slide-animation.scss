@@ -1,0 +1,29 @@
+#slide1:checked ~ .card__slide > .s1 {
+  margin-left: 0;
+}
+#slide2:checked ~ .card__slide > .s1 {
+  margin-left: -33.33%;
+}
+#slide3:checked ~ .card__slide > .s1 {
+  margin-left: -66.66%;
+}
+
+#slide1:checked ~ .nav-slide-controll #c1 {
+  border-color: #92e3a9;
+  background-color: #92e3a9;
+}
+#slide2:checked ~ .nav-slide-controll #c2 {
+  border-color: #92e3a9;
+  background-color: #92e3a9;
+}
+#slide3:checked ~ .nav-slide-controll #c3 {
+  border-color: #92e3a9;
+  background-color: #92e3a9;
+}
+
+#slide3:checked ~ .action-button-group #skip-btn {
+  display: none;
+}
+#slide3:checked ~ .action-button-group #init-btn {
+  display: initial;
+}
