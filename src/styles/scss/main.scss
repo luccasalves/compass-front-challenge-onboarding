@@ -31,6 +31,12 @@ body {
   border-radius: var(--default-rounded);
   position: relative;
   overflow: hidden;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: rgb(98, 132, 82) 8px 8px 8px;
+  }
 
   .card__slide {
     display: flex;
@@ -42,9 +48,12 @@ body {
       width: 33.33%;
       border-radius: var(--default-rounded);
       padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .slide__ilustration {
-        width: 100%;
+        width: 80%;
         background-color: var(--soft-gray);
         border-radius: 50%;
         margin-bottom: 16px;
@@ -97,26 +106,25 @@ body {
 
     .action-button__continue {
       background-color: var(--primary);
-      padding: var(--default-padding);
+      padding: 16px;
       font-weight: 600;
       color: var(--light);
       margin-bottom: 32px;
       box-shadow: var(--iceBlue) 4px 4px 10px;
       transform: translate(-4px -4px);
 
+      &:hover {
+        filter: brightness(0.9);
+      }
+
       &:active {
+        filter: brightness(1.05);
         box-shadow: none;
       }
     }
     .action-button__skip {
       font-weight: 400;
       color: var(--primary);
-      margin-bottom: var(--2x-margin);
-    }
-    .action-button__initial {
-      display: none;
-      font-weight: 400;
-      color: var(--dark);
       margin-bottom: var(--2x-margin);
     }
   }

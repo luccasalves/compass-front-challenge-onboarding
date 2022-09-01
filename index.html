@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/assets/img/logo-uol.png">
 
     <link rel="stylesheet" href="./src/styles/css/main.min.css">
     <link rel="stylesheet" href="./src/styles/css/slide-animation.min.css">
@@ -18,7 +19,7 @@
     <div class="card">
 
 
-        <input class="hidden" title="slide 1" type="radio" name="slide" id="slide1" checked>
+        <input class="hidden" title="slide 1" type="radio" name="slide" id="slide1">
         <input class="hidden" title="slide 2" type="radio" name="slide" id="slide2">
         <input class="hidden" title="slide 3" type="radio" name="slide" id="slide3">
 
@@ -43,26 +44,25 @@
         </section>
 
         <nav class="nav-slide-controll">
-            <label for="slide1" class="nav__item-control" id="c1"></label>
-            <label for="slide2" class="nav__item-control" id="c2"></label>
-            <label for="slide3" class="nav__item-control" id="c3"></label>
+            <span class="nav__item-control" id="c1"></span>
+            <span class="nav__item-control" id="c2"></span>
+            <span class="nav__item-control" id="c3"></span>
         </nav>
 
 
 
         <section class="action-button-group">
-            <button type="button" class="action-button__continue shadow" id="continue-btn">
+            <button type="button" class="action-button__continue shadow" id="btn-continue">
                 Continue
             </button>
-            <button type="button" class="action-button__skip" id="skip-btn">
+            <button type="button" class="action-button__skip" id="btn-skip">
                 Skip
             </button>
-            <button type="button" class="action-button__initial" id="init-btn">
-                back to init
-            </button>
+
         </section>
 
     </div>
 </body>
+<script src="./src/scripts/slide.js"></script>
 
 </html>

@@ -21,9 +21,6 @@
   background-color: #92e3a9;
 }
 
-#slide3:checked ~ .action-button-group #skip-btn {
-  display: none;
-}
-#slide3:checked ~ .action-button-group #init-btn {
-  display: initial;
+#slide3:checked ~ .action-button-group #btn-skip {
+  opacity: 0;
 }
