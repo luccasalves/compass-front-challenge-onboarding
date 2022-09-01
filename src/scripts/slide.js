@@ -13,12 +13,6 @@ const slides = [slide1, slide2, slide3];
 
 slide1.setAttribute("checked", "true");
 
-function clearChecked() {
-  slide1.removeAttribute("checked");
-  slide2.removeAttribute("checked");
-  slide3.removeAttribute("checked");
-}
-
 function verificationStatePosition(position) {
   if (position == "1") {
     buttonContinue.innerHTML = "Back";
@@ -39,7 +33,6 @@ function nextSlide() {
   for (const slide of slides) {
     if (slide.checked == true) {
       const position = slides.indexOf(slide);
-      clearChecked();
       verificationStatePosition(position);
       slides[position + 1].checked = true;
       break;
@@ -51,9 +44,9 @@ function skiptSlide() {
   slide3.checked = true;
 }
 
-// setInterval(() => {
-//   nextSlide();
-// }, 6000);
+setInterval(() => {
+  nextSlide();
+}, 7000);
 
 buttonContinue.addEventListener("click", nextSlide);
 buttonSkip.addEventListener("click", skiptSlide);
