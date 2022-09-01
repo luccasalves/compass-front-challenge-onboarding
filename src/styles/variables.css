@@ -1,0 +1,13 @@
+:root {
+    --primary: #92e3a9;
+    --iceBlue: #a1c3fc;
+    --dark: #282a36;
+    --light: #f9f9f9;
+    --soft-gray: #eee;
+
+    --default-rounded: 16px;
+    --default-padding: 12px;
+    --2x-padding: 24px;
+    --default-margin: 12px;
+    --2x-margin: 16px;
+}

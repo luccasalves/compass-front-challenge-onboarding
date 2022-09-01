@@ -6,10 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/assets/img/logo-uol.png">
+
+    <link rel="stylesheet" href="./src/styles/css/main.min.css">
+    <link rel="stylesheet" href="./src/styles/css/slide-animation.min.css">
 </head>
 
 <body>
-    <h1>challenger</h1>
+    <div class="card">
+
+
+        <input class="hidden" title="slide 1" type="radio" name="slide" id="slide1">
+        <input class="hidden" title="slide 2" type="radio" name="slide" id="slide2">
+        <input class="hidden" title="slide 3" type="radio" name="slide" id="slide3">
+
+        <section class="card__slide">
+            <div class="slide__item s1">
+                <img class="slide__ilustration" src="./src/assets/svg/1.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Plant lover Community</h1>
+                <p class="slide__text">Find gardening enthusiasts from all over the world</p>
+            </div>
+
+            <div class="slide__item s2">
+                <img class="slide__ilustration" src="./src/assets/svg/2.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Get fast & safe delivery</h1>
+                <p class="slide__text">Get good quality products for your plants</p>
+            </div>
+
+            <div class="slide__item s3">
+                <img class="slide__ilustration" src="./src/assets/svg/3.svg" alt="imagem ilustativa">
+                <h1 class="slide__title">Buy & Sell Tools</h1>
+                <p class="slide__text">Buy & sell good quality products for your beautiful plants</p>
+            </div>
+        </section>
+
+        <nav class="nav-slide-controll">
+            <span class="nav__item-control" id="c1"></span>
+            <span class="nav__item-control" id="c2"></span>
+            <span class="nav__item-control" id="c3"></span>
+        </nav>
+
+
+
+        <section class="action-button-group">
+            <button type="button" class="action-button__continue shadow" id="btn-continue">
+                Continue
+            </button>
+            <button type="button" class="action-button__skip" id="btn-skip">
+                Skip
+            </button>
+
+        </section>
+
+    </div>
 </body>
+<script src="./src/scripts/slide.js"></script>
 
 </html>
