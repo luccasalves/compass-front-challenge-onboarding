@@ -20,8 +20,8 @@ body {
 }
 
 .card {
-  min-width: 240px;
-  max-width: 400px;
+  max-width: 450px;
+  width: 100%;
   max-height: 580px;
   height: 100%;
 
@@ -34,11 +34,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: 0.4s;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: rgb(98, 132, 82) 8px 8px 8px;
-  }
+  box-shadow: rgb(98, 132, 82) 8px 8px 8px;
 
   .card__slide {
     display: flex;
@@ -137,12 +133,14 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
   body {
+    padding: 0;
     font-size: 12px;
+    background-color: var(--light);
 
-    img {
-      max-width: 180px;
+    .card {
+      box-shadow: none;
     }
   }
 }
